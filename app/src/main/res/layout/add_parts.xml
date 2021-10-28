@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_add_parts"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:visibility="gone">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:orientation="vertical">
+
+        <com.lbit.fleet.customfonts.MyTextViewPoppinsSemiBold
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/search_part_desc"
+            android:textColor="@color/header_color"
+            android:textSize="@dimen/_15sdp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_40sdp">
+
+            <AutoCompleteTextView
+                android:id="@+id/et_search_part_desc"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/search_bg"
+                android:drawableEnd="@drawable/icon_autosearch"
+                android:hint="@string/enter_part"
+                android:inputType="text"
+                android:maxLength="10"
+                android:padding="@dimen/_7sdp"
+                android:imeOptions="actionDone"
+                android:textColorHint="@color/gray"
+                android:textSize="@dimen/_15sdp" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_search_part"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <com.lbit.fleet.customfonts.MyTextViewPoppinsSemiBold
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/part"
+            android:textColor="@color/header_color"
+            android:textSize="@dimen/_15sdp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_40sdp"
+                android:orientation="horizontal">
+
+                <com.lbit.fleet.customfonts.MyTextViewPoppinsMedium
+                    android:id="@+id/tv_oe_part_no"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/text_bg"
+                    android:padding="@dimen/_10sdp"
+                    android:textSize="@dimen/_15sdp"
+                    android:textColor="@color/black" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/_20sdp"
+                    android:layout_marginRight="@dimen/_20sdp"
+                    android:layout_weight="1.5"
+                    android:orientation="horizontal">
+
+                    <com.lbit.fleet.customfonts.MyTextViewPoppinsMedium
+                        android:id="@+id/decrease"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:padding="@dimen/_7sdp"
+                        android:text="-"
+                        android:textColor="@color/text_color"
+                        android:textSize="@dimen/_20sdp" />
+
+                    <com.lbit.fleet.customfonts.MyTextViewPoppinsMedium
+                        android:id="@+id/integer_number"
+                        android:layout_width="@dimen/_50sdp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:background="@drawable/text_bg"
+                        android:gravity="center"
+                        android:padding="@dimen/_7sdp"
+                        android:text="0"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_15sdp" />
+
+                    <com.lbit.fleet.customfonts.MyTextViewPoppinsMedium
+                        android:id="@+id/increase"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:padding="@dimen/_7sdp"
+                        android:text="+"
+                        android:textColor="@color/text_color"
+                        android:textSize="@dimen/_20sdp" />
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_search_part_location"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:layout_marginBottom="@dimen/_20sdp"
+        android:background="@drawable/parts_bg"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_20sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginRight="@dimen/_20sdp"
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <com.lbit.fleet.customfonts.MyTextViewPoppinsMedium
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:padding="@dimen/_7sdp"
+                    android:text="@string/site"
+                    android:textColor="@color/header_color"
+                    android:textSize="@dimen/_15sdp" />
+
+                <com.lbit.fleet.customfonts.MyTextViewPoppinsMedium
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:padding="@dimen/_7sdp"
+                    android:text="@string/avail_qty"
+                    android:textColor="@color/header_color"
+                    android:textSize="@dimen/_15sdp" />
+
+            </LinearLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_search_part_otherDetails"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:orientation="vertical">
+
+            <com.lbit.fleet.customfonts.MyTextViewPoppinsSemiBold
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/store_location"
+                android:textColor="@color/header_color"
+                android:textSize="@dimen/_15sdp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_40sdp">
+
+                <com.lbit.fleet.customfonts.MyTextViewPoppinsMedium
+                    android:id="@+id/tv_store_location"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/search_bg"
+                    android:padding="@dimen/_7sdp"
+                    android:text=""
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_15sdp" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:orientation="vertical">
+
+            <com.lbit.fleet.customfonts.MyTextViewPoppinsSemiBold
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/pickup_person"
+                android:textColor="@color/header_color"
+                android:textSize="@dimen/_15sdp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_40sdp"
+                android:background="@drawable/search_bg">
+
+                <Spinner
+                    android:id="@+id/sp_pickup_person"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="@dimen/_7sdp" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:orientation="vertical">
+
+            <com.lbit.fleet.customfonts.MyTextViewPoppinsSemiBold
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/contact"
+                android:textColor="@color/header_color"
+                android:textSize="@dimen/_15sdp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_40sdp">
+
+                <EditText
+                    android:id="@+id/et_contact"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/search_bg"
+                    android:hint="@string/enter_mobile"
+                    android:inputType="number"
+                    android:maxLength="10"
+                    android:padding="@dimen/_7sdp"
+                    android:textColorHint="@color/gray"
+                    android:textSize="@dimen/_15sdp" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_30sdp"
+            android:layout_marginBottom="@dimen/_20sdp"
+            android:orientation="vertical"
+            android:layout_gravity="center"
+            android:gravity="center">
+
+            <com.lbit.fleet.customfonts.MyTextViewPoppinsSemiBold
+                android:id="@+id/tv_add"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/add"
+                android:paddingTop="@dimen/_5sdp"
+                android:paddingBottom="@dimen/_5sdp"
+                android:paddingLeft="@dimen/_30sdp"
+                android:paddingRight="@dimen/_30sdp"
+                android:background="@drawable/submit_bg"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_15sdp" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

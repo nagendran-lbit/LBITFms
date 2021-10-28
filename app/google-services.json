@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "871626631986",
+    "project_id": "lbit-fms",
+    "storage_bucket": "lbit-fms.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:871626631986:android:8a3b7e3e6b6a4fbf6bc52b",
+        "android_client_info": {
+          "package_name": "com.lbit.fleet"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "871626631986-autcdkpib3bjfg3t0c8bk4l99fqvtd92.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB6EmS_vO6_eVVaSqcUDhgeach6PA1-fLE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "871626631986-autcdkpib3bjfg3t0c8bk4l99fqvtd92.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
